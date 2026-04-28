@@ -1,0 +1,30 @@
+list=[]
+while True:
+	print("1. Add")
+	print("2. Remove")
+	print("3. Display")
+	print("4. Quit")
+	n=int(input("Enter choice: "))
+	if n==1:
+		add=int(input("Integer: "))
+		list.append(add)
+		print(f"List after adding: {list}")
+	elif n==2:
+		if len(list)==0:
+			print("List is empty")
+		elif len(list)!=0:
+			remove=int(input("Integer: "))
+			if remove not in list:
+				print("Element not found")
+			else:
+				list.remove(remove)
+				print(f"List after removing: {list}")
+	elif n==3:
+			if len(list)==0:
+				print("List is empty")
+			else:
+				print(f"{list}")
+	elif n==4:
+		break
+	else:
+		print("Invalid choice")
