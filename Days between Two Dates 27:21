@@ -1,0 +1,7 @@
+from datetime import date
+n1=list(map(int,input().split('-')))
+n2=list(map(int,input().split('-')))
+d1=date(*n1)
+d2=date(*n2)
+diff=(d2-d1).days
+print(diff)
