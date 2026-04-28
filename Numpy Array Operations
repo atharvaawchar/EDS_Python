@@ -1,0 +1,12 @@
+import numpy as np
+
+rows,col=map(int,input().split())
+elements=[]
+for i in range(rows):
+	row=list(map(int,input().split()))
+	elements.extend(row)
+arr=np.array(elements).reshape(rows,col)
+print(arr)
+print(arr.ndim)
+print(arr.shape)
+print(arr.size)
